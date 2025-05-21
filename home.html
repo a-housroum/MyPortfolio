@@ -14,6 +14,10 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Overlock+SC&display=swap"
       rel="stylesheet"
     />
@@ -23,7 +27,7 @@
   <body>
     <canvas id="galaxy-canvas"></canvas>
     <main
-      id="hero"
+      id="home"
       class="d-flex flex-column justify-content-center align-items-center vh-100 text-center"
     >
       <h1 class="display-1 mb-3 fade-in delay-0">Abdulmalek Housroum</h1>
@@ -39,14 +43,162 @@
         </p>
       </div>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="#about" class="btn-accent fade-in delay-2">About Me</a>
-        <a href="#work" class="btn-accent fade-in delay-3">How I Work</a>
-        <a href="#case-studies" class="btn-accent fade-in delay-4"
+        <a
+          href="#"
+          data-scroll-target="about"
+          class="btn-accent fade-in delay-2"
+          >About Me</a
+        >
+        <a href="#" data-scroll-target="work" class="btn-accent fade-in delay-3"
+          >How I Work</a
+        >
+        <a
+          href="#"
+          data-scroll-target="case-studies"
+          class="btn-accent fade-in delay-4"
           >Case Studies</a
         >
-        <a href="#contact" class="btn-accent fade-in delay-5">Get in Touch</a>
+        <a
+          href="#"
+          data-scroll-target="contact"
+          class="btn-accent fade-in delay-5"
+          >Get in Touch</a
+        >
       </div>
     </main>
+    <section id="about" class="min-vh-100 d-flex align-items-center text-start">
+      <div class="container">
+        <h2 class="mb-4">About Me</h2>
+        <p class="mx-auto" style="max-width: 720px">
+          Im a third-year Software Engineering student at the University of
+          Ottawa, passionate about building solutions that blend clean design,
+          accessibility, and thoughtful user experience. My work focuses on
+          full-stack web development, cloud automation, and inclusive
+          technologies.
+        </p>
+      </div>
+    </section>
+    <section id="work" class="min-vh-100 d-flex align-items-center text-start">
+      <div class="container">
+        <h2 class="mb-4">How I Work</h2>
+        <p class="mx-auto" style="max-width: 720px">
+          My approach to software development blends creative problem-solving
+          with structured methodology. I follow user-centered design principles,
+          frequently using Design Thinking to define and refine solutions. Im
+          comfortable in Agile teams, enjoy iteration, and believe in writing
+          clean, maintainable code supported by thoughtful testing and feedback
+          loops.
+        </p>
+      </div>
+    </section>
+    <section
+      id="case-studies"
+      class="min-vh-100 d-flex align-items-center text-start py-5"
+    >
+      <div class="container">
+        <h2 class="mb-4">Case Studies</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a href="/ServiceSite/service.html" target="_blank">
+              <div
+                class="case-card text-white position-relative"
+                style="background-image: url('/Media/Images/service.jpg')"
+              >
+                <div
+                  class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-end p-3"
+                >
+                  <h4 class="mb-1">Service Site</h4>
+                  <p class="mb-0 text-light small">Coming soon...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="/Game/game.html" target="_blank">
+              <div
+                class="case-card text-white position-relative"
+                style="background-image: url('/Media/Images/game.jpg')"
+              >
+                <div
+                  class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-end p-3"
+                >
+                  <h4 class="mb-1">Game</h4>
+                  <p class="mb-0 text-light small">Coming soon...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="/E-CommerceSite/e-commerce.html" target="_blank">
+              <div
+                class="case-card text-white position-relative"
+                style="background-image: url('/Media/Images/e-commerce.jpg')"
+              >
+                <div
+                  class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-end p-3"
+                >
+                  <h4 class="mb-1">E-Commerce Site</h4>
+                  <p class="mb-0 text-light small">Coming soon...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="/AnalyticsSite/analytics.html" target="_blank">
+              <div
+                class="case-card text-white position-relative"
+                style="background-image: url('/Media/Images/analytics.jpg')"
+              >
+                <div
+                  class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-end p-3"
+                >
+                  <h4 class="mb-1">Analytics Site</h4>
+                  <p class="mb-0 text-light small">Coming soon...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="min-vh-100 d-flex align-items-center text-start py-5"
+    >
+      <div class="container">
+        <h2 class="mb-4">Get in Touch</h2>
+        <p class="mb-4" style="max-width: 720px">
+          I'm always open to new opportunities, collaborations, or just a good
+          conversation about design and development. Feel free to reach out!
+        </p>
+
+        <div class="d-flex flex-wrap align-items-center gap-4">
+          <a
+            href="https://github.com/a-housroum"
+            target="_blank"
+            class="text-decoration-none text-light"
+          >
+            <i class="bi bi-github fs-3"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abd-housroum-670b5a250"
+            target="_blank"
+            class="text-decoration-none text-light"
+          >
+            <i class="bi bi-linkedin fs-3"></i> LinkedIn
+          </a>
+          <a
+            href="mailto:ahous063@uottawa.ca"
+            class="text-decoration-none text-light"
+          >
+            <i class="bi bi-envelope fs-3"></i> Email
+          </a>
+          <a href="tel:+13434636479" class="text-decoration-none text-light">
+            <i class="bi bi-telephone fs-3"></i> Call
+          </a>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
     <script>
       const scene = new THREE.Scene();
@@ -80,8 +232,8 @@
       const points = new THREE.Points(geometry, material);
       scene.add(points);
       let rotationSpeed = 0.0008;
-      const heroButtons = document.querySelectorAll(".btn-accent");
-      heroButtons.forEach((button) => {
+      const homeButtons = document.querySelectorAll(".btn-accent");
+      homeButtons.forEach((button) => {
         button.addEventListener("mouseenter", () => {
           rotationSpeed = 0.002;
         });
@@ -100,6 +252,21 @@
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+    </script>
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      document.querySelectorAll("[data-scroll-target]").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("data-scroll-target");
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
       });
     </script>
   </body>

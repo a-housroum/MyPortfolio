@@ -29,9 +29,7 @@ a {
 }
 .fade-in {
     opacity: 0;
-    animation: fadeInUp 0.6s ease forwards; 
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+    animation: fadeInUp 0.6s ease forwards;
 }
 .delay-0 { animation-delay: 0.1s; }
 .delay-1 { animation-delay: 0.3s; }
@@ -65,4 +63,19 @@ a {
         font-size: 1.25rem;
         padding: 0.85rem 1.8rem;
     } 
+}
+.case-card {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.case-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+.case-card .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); 
 }
