@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abdulmalek Housroum" />
+    <meta name="theme-color" content="#ff7f50" />
     <meta
       name="description"
       content="This is the portfolio website of Abdulmalek Housroum, a software engineering student at the University of Ottawa."
@@ -54,9 +56,9 @@
         >
         <a
           href="#"
-          data-scroll-target="case-studies"
+          data-scroll-target="projects"
           class="btn-accent fade-in delay-4"
-          >Case Studies</a
+          >Projects</a
         >
         <a
           href="#"
@@ -68,40 +70,77 @@
     </main>
     <section id="about" class="min-vh-100 d-flex align-items-center text-start">
       <div class="container">
-        <h2 class="mb-4">About Me</h2>
-        <p style="max-width: 720px">
-          Im a third-year Software Engineering student at the University of
-          Ottawa, passionate about building solutions that blend clean design,
-          accessibility, and thoughtful user experience. My work focuses on
-          full-stack web development, cloud automation, and inclusive
-          technologies.
-        </p>
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img
+              src="/Media/Images/me.jpeg"
+              alt="Abdulmalek Housroum"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2 class="section-heading">About Me</h2>
+            <p class="section-text">
+              I like things that work—and work well. Whether it’s a tool, an
+              interface, or a workflow, I’m driven to build solutions that feel
+              intuitive, reliable, and thoughtful. I'm currently studying
+              Software Engineering at the University of Ottawa and am especially
+              drawn to projects where thoughtful design meets practical impact.
+              I’m interested in the intersection of software, research, and
+              entrepreneurship, and love building tools that genuinely improve
+              how people live and work.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="work" class="min-vh-100 d-flex align-items-center text-start">
       <div class="container">
-        <h2 class="mb-4">How I Work</h2>
-        <p style="max-width: 720px">
-          My approach to software development blends creative problem-solving
-          with structured methodology. I follow user-centered design principles,
-          frequently using Design Thinking to define and refine solutions. Im
-          comfortable in Agile teams, enjoy iteration, and believe in writing
-          clean, maintainable code supported by thoughtful testing and feedback
-          loops.
-        </p>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-8">
+            <h2 class="section-heading">How I Work</h2>
+            <p class="section-text" style="max-width: 720px">
+              I thrive in collaborative teams where ideas are tested,
+              challenged, and strengthened together. I learn quickly from others
+              and genuinely enjoy feedback—it sharpens my thinking and improves
+              the work. Whether I’m applying Design Thinking to a user challenge
+              or refining a small UI detail, I care about clarity, structure,
+              and clean, maintainable code. I believe great software doesn’t
+              just solve problems—it respects the user.
+            </p>
+          </div>
+          <div class="col-md-4 d-flex flex-column align-items-end gap-4">
+            <div class="text-end">
+              <i class="bi bi-lightbulb display-5 text-warning"></i>
+              <div class="fs-5 mt-2">Ideation</div>
+            </div>
+            <div class="text-end">
+              <i class="bi bi-pencil-square display-5 text-info"></i>
+              <div class="fs-5 mt-2">Design</div>
+            </div>
+            <div class="text-end">
+              <i class="bi bi-code-slash display-5 text-primary"></i>
+              <div class="fs-5 mt-2">Development</div>
+            </div>
+            <div class="text-end">
+              <i class="bi bi-bar-chart-line display-5 text-success"></i>
+              <div class="fs-5 mt-2">Testing</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section
-      id="case-studies"
+      id="projects"
       class="min-vh-100 d-flex align-items-center text-start py-5"
     >
       <div class="container">
-        <h2 class="mb-4">Case Studies</h2>
+        <h2 class="section-heading">Projects</h2>
         <div class="row g-4">
           <div class="col-md-6">
             <a href="/ServiceSite/service.html" target="_blank">
               <div
-                class="case-card text-white position-relative"
+                class="project-card text-white position-relative"
                 style="background-image: url('/Media/Images/service.jpg')"
               >
                 <div
@@ -116,7 +155,7 @@
           <div class="col-md-6">
             <a href="/Game/game.html" target="_blank">
               <div
-                class="case-card text-white position-relative"
+                class="project-card text-white position-relative"
                 style="background-image: url('/Media/Images/game.jpg')"
               >
                 <div
@@ -131,7 +170,7 @@
           <div class="col-md-6">
             <a href="/E-CommerceSite/e-commerce.html" target="_blank">
               <div
-                class="case-card text-white position-relative"
+                class="project-card text-white position-relative"
                 style="background-image: url('/Media/Images/e-commerce.jpg')"
               >
                 <div
@@ -146,7 +185,7 @@
           <div class="col-md-6">
             <a href="/AnalyticsSite/analytics.html" target="_blank">
               <div
-                class="case-card text-white position-relative"
+                class="project-card text-white position-relative"
                 style="background-image: url('/Media/Images/analytics.jpg')"
               >
                 <div
@@ -166,12 +205,11 @@
       class="min-vh-100 d-flex align-items-center text-start py-5"
     >
       <div class="container">
-        <h2 class="mb-4">Get in Touch</h2>
-        <p style="max-width: 720px">
+        <h2 class="section-heading">Get in Touch</h2>
+        <p class="section-text" style="max-width: 720px">
           I'm always open to new opportunities, collaborations, or just a good
           conversation about design and development. Feel free to reach out!
         </p>
-
         <div class="d-flex flex-wrap align-items-center gap-4">
           <a
             href="https://github.com/a-housroum"
