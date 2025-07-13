@@ -1,3 +1,5 @@
+import countryNames from "../data/countryNames";
+
 export default function CustomTooltip({
     active,
     payload,
@@ -8,9 +10,12 @@ export default function CustomTooltip({
     unitFr = "titres",
   }) {
     if (active && payload && payload.length > 0) {
+      
       const labelText =
-        language === "en" ? `${labelKey}: ${label}` : `${translateLabel(labelKey)} : ${label}`;
-  
+        language === "en"
+        ? `${labelKey}: ${countryNames[label] || label}`
+        : `${translateLabel(labelKey)} : ${countryNames[label] || label}`;
+
       const valueText =
         language === "en"
           ? `${payload[0].value} ${unit}`
@@ -36,12 +41,14 @@ export default function CustomTooltip({
   }
   
   function translateLabel(labelKey) {
-    switch (labelKey) {
-      case "Team":
-        return "Équipe";
-      case "Year":
-        return "Année";
-      default:
-        return labelKey;
-    }
+  switch (labelKey) {
+    case "Team":
+      return "Équipe";
+    case "Country":
+      return "Pays";
+    case "Year":
+      return "Année";
+    default:
+      return labelKey;
   }
+}

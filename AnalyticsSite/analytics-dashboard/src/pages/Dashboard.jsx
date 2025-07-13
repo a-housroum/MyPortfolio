@@ -1,16 +1,17 @@
-import GoalsLineChart from "../components/LineChart";
-import WinsBarChart from "../components/BarChart";
+import MedalsLineChart from "../components/MedalsLineChart";
+import MedalsBarChart from "../components/MedalsBarChart";
 
 export default function Dashboard({ language }) {
   return (
     <div className="dashboard-container">
       <p className="dashboard-intro">
         {language === "en"
-          ? "Use the charts below to explore total goals scored in each World Cup and compare the most successful national teams in tournament history."
-          : "Utilisez les graphiques ci-dessous pour explorer les buts marqués lors de chaque Coupe du Monde et comparer les équipes nationales les plus titrées de l'histoire du tournoi."}
+          ? "🥇  Track medal trends across Olympic history and compare the top-performing countries based on their total medal counts."
+          : "🥇  Suivez les tendances des médailles à travers l'histoire olympique et comparez les pays les plus performants en fonction de leur nombre total de médailles."
+        }
       </p>
-      <WinsBarChart language={language} />
-      <GoalsLineChart language={language} />
+      <MedalsLineChart language={language} />
+      <MedalsBarChart language={language} />
     </div>
   );
 }
